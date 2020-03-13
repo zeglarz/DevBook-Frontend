@@ -1,7 +1,74 @@
+// Text Styles
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 // Backgrounds
 .bg {
   &-primary {
-    background-color: $primary-color;
-    color: $light-color;
+    @include set-background($primary-color);
   }
+
+  &-light {
+    @include set-background($light-color);
+    border: #ccc 1px solid;
+  }
+
+  &-dark {
+    @include set-background($dark-color);
+  }
+
+  &-success {
+    @include set-background($success-color);
+  }
+
+  &-danger {
+    @include set-background($danger-color);
+  }
+
+  &-white {
+    @include set-background(#fff);
+    border: #ccc 1px solid;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;;
+  background: $light-color;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  coursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+
+  &-primary {
+    @include set-background($primary-color)
+  }
+
+}
+
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
