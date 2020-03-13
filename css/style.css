@@ -43,13 +43,34 @@
   background: #f4f4f4;
   color: #333;
   padding: 0.4rem 1.3rem;
-  coursor: pointer;
+  cursor: pointer;
   font-size: 1rem;
   margin-right: 0.5rem;
-  outline: none; }
-  .btn-primary {
+  outline: none;
+  transition: all 0.2s ease-in; }
+  .btn.btn-primary {
     background-color: #17a2b8;
     color: #f4f4f4; }
+    .btn.btn-primary:hover {
+      background: #1fc8e3; }
+  .btn.btn-dark {
+    background-color: #343a40;
+    color: #f4f4f4; }
+    .btn.btn-dark:hover {
+      background: #4b545c; }
+  .btn.btn-success {
+    background-color: #28a745;
+    color: #f4f4f4; }
+    .btn.btn-success:hover {
+      background: #34ce57; }
+  .btn.btn-danger {
+    background-color: #dc3545;
+    color: #333; }
+    .btn.btn-danger:hover {
+      background: #e4606d; }
+  .btn:hover {
+    background: #626d78;
+    color: #fff; }
 
 .dark-overlay {
   height: 100%;
